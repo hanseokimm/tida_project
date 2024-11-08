@@ -3,6 +3,7 @@ header.active {
 }
 header {
     position: relative;
+    min-width: 1440px;
     width: 100%;
     height: 236px;
     padding-top: 24px;

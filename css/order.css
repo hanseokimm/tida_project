@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 1440px;
     height: 64px;
     padding: 0;
     z-index: 1000;
@@ -70,6 +71,7 @@
 .order-main {
     position: fixed;
     width: 100%;
+    min-width: 1440px;
     height: 100%;
 }
 .order-main .center-box {

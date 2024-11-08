@@ -70,6 +70,7 @@
 .login-main {
     position: fixed;
     width: 100%;
+    min-width: 1440px;
     height: 100%;
 }
 .login-main .center-box {
