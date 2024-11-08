@@ -25,6 +25,7 @@ function login() {
             console.log(loginId.value);
         }
         else {
+            loginErrText.classList.add("active");
             loginBtn.classList.add("active");
         }
     });
