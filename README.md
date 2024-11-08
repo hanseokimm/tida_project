@@ -1,4 +1,4 @@
-# 티머니
+# 티다문구점
 <div align="center">
  <img src="https://github.com/user-attachments/assets/72aad7c7-0a27-4c2e-9500-b3389640e550" width= "600" height="600"/>
 </div>
