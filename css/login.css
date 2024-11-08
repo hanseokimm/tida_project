@@ -1,0 +1,200 @@
+.order-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    padding: 0;
+    z-index: 1000;
+}
+.order-header .order-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: var(--tida-menu-white);
+    transition: 0.5s 0.3s ease;
+    opacity: 0;
+    z-index: -1000;
+}
+.order-header .order-bg.active {
+    opacity: 1;
+    transition: none;
+}
+.order-header .m-wrap {
+    top: 64px;
+}
+.order-header .m-wrap-in {
+    padding-top: 56px;
+}
+.h-order-in {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.h-order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 24px;
+}
+.order-header .left-btn {
+    display: flex;
+    width: 192px;
+}
+.order-header .left-btn img {
+    width: 30px;
+    height: 30px;
+}
+.order-header .order-ham-btn {
+    margin-right: 24px;
+}
+.order-header .order-ham-btn.active img {
+    content: url(../img/close.svg);
+}
+.order-header .h-logo {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.order-header:has(.m-wrap.active) .h-logo {
+    opacity: 1;
+    transform: translateY(460px);
+}
+
+.login-main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.login-main .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: var(--suite-font);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.login-main .input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 32px 0 50px;
+
+}
+.login-main input {
+    width: 480px;
+    height: 54px;
+    padding: 16px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+}
+.login-main input:focus { /* outline 테두리 속성 수정 */
+    outline: 1px solid #000;
+}
+.login-main .pass-box {
+    position: relative;
+}
+.login-main .pass-box span {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    display: none;
+}
+.login-main .pass-box .eye-close.active {
+    display: block;
+}
+.login-main .pass-box .eye-open.active {
+    display: block;
+}
+.login-error-text.active {
+    display: block;
+}
+.login-error-text {
+    position: absolute;
+    bottom: -12px;
+    display: none;
+    color: var(--tida-variant-orange);
+    font-family: var(--suite-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    transform: translateY(50%);
+}
+.login-main .login-box.active {
+    background-color: #000;
+}
+.login-main .login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 72px;
+    background-color: rgba(187, 187, 187, 1);
+    border-radius: 50px;
+    color: #fff;
+    font-family: var(--suite-font);
+    font-size: 2.0rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+}
+.login-main .find-box {
+    width: 100%;
+    margin-top: 16px;
+    color: rgba(153, 153, 153, 1);
+    font-family: var(--suite-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+}
+.login-main .find-box a:nth-child(2) span {
+    display: inline-flex;
+    align-items: center;
+}
+.login-main .find-box a:nth-child(2) span::before,
+.login-main .find-box a:nth-child(2) span::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 8px;
+    background-position: center;
+    background-color: rgba(153, 153, 153, 1);
+}
+.login-main .login-var {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 64px;
+}
+.login-main .login-var p {
+    font-size: 1.6rem;
+}
+.login-main .login-var img {
+    margin-top: 8px;
+    border-radius: 50%;
+}
+.login-main .nonmember {
+    display: inline-block;
+    margin-top: 54px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+    text-decoration: underline;
+}
